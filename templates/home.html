@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felix Ofori | Bio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #1e1e2f, #2c2c3e);
+      color: #ffffff;
+      padding: 2rem;
+    }
+    .profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    p.subtitle {
+      font-size: 1.25rem;
+      color: #cfcfcf;
+      margin-bottom: 2rem;
+    }
+    .button-group a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border: 1px solid #999;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      color: white;
+      transition: background 0.3s;
+    }
+    .button-group a:hover {
+      background: #444;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background-color: #2f2f44;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      text-align: left;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+    .card:hover {
+      background-color: #3c3c5a;
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.25rem;
+    }
+    .card p {
+      color: #c0c0c0;
+    }
+    .card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      height: 100%;
+    }
+  </style>
+</head>
+<body> 
+  <div class="container">
+    <h1> <img src="{% static 'images/me.heic' %}" class="profile-pic" alt="Felix Ofori"> I'm Felix Ofori 👋</h1>
+    <p class="subtitle">Software Engineer | Mentor | Community Builder</p>
+
+    <div class="button-group">
+      <a href="https://github.com/Felixofori" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/felix-ofori-633471215" target="_blank">LinkedIn</a>
+      <a href="mailto:felixofori@gustavus.edu">Email</a>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <a href="/about/">
+          <h2>About Me</h2>
+          <p>
+            Passionate about using code to create solutions that drive real-world impact. Experienced in software development, mentorship, and leadership.
+          </p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="/projects/">
+          <h2>Projects</h2>
+          <p>
+            Check out my latest work including a Trading Bot, Task Manager, Bank Queue App, and Calendar CLI tool.
+          </p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="/connect/">
+          <h2>Let's Connect</h2>
+          <p>
+            Always open to exciting opportunities and collaborations. Feel free to reach out and let's make something impactful together.
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

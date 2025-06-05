@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects - Felix Ofori</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #fff;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #d1e8ff;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #7fdfff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Projects</h1>
+  <div class="projects">
+    <div class="card">
+      <h2>Trading-Bot</h2>
+      <p>A trading bot using Ameritrade API for real-time trading, historical analysis, and Flask-based backend for monitoring.</p>
+      <a href="https://github.com/Cletches/tradingbot" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h2>Gustavus Management App</h2>
+      <p>An app that would allow for Professors and students to be able to have an amazing office hour experience..</p>
+      <a href="https://github.com/Cletches/Gustavus-University-Office-Hours-Management-Tool" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h2>Bank Ticketing App</h2>
+      <p>An application that helps banks manage customer service queues digitally and efficiently.</p>
+      <a href="https://github.com/Cletches/Bank-TickAppl" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h2>Calendar CLI Tool</h2>
+      <p>A simple command-line tool in C that generates calendar layouts with leap year handling and manual updates.</p>
+      <a href="https://github.com/Cletches/Calendar-Project" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h2>Hate Speech Detector</h2>
+      <p>Machine learning-based project for identifying toxic and hate speech in social media comments.</p>
+      <a href="https://github.com/Cletches/Hate-speech-detection-model" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+</body>
+</html>
