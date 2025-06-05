@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-689uj)9c20h3b=7lz)b78dw-uuls^y$si=s03+g$y&q+=*8u$_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['studybud-3-sgil.onrender.com']
 
 
 # Application definition
